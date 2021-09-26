@@ -1,7 +1,7 @@
 import axios from 'axios';
 export default class Service {
     addData=(payload)=>{
-        return axios.post('http://3.129.92.172:8080/save',payload)
+        return axios.post('http://3.129.92.172:5000/save',payload)
         .then(()=>{})
         .catch((err)=>{
             console.log(err)
@@ -9,7 +9,7 @@ export default class Service {
     }
 
     getData=()=>{
-        return axios.get('http://3.129.92.172:8080/view')
+        return axios.get('http://3.129.92.172:5000/view')
         .then(response => {
             if(response.status==200){
                 return response.data;
@@ -23,7 +23,7 @@ export default class Service {
   
 
     deleteData=(payload)=>{
-       return axios.get(`http://3.129.92.172:8080/delete/${payload}`)
+       return axios.get(`http://3.129.92.172:8080/5000/${payload}`)
        .then(()=>{})
        .catch((err)=>{
             console.log(err)
