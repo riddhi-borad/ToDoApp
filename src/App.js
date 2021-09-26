@@ -16,7 +16,7 @@ function App() {
         </Provider>
         {/* <Route path='/edit-list/:id' component={Edit}></Route> */}
         <Route path='/view-list' component={View}></Route>
-      
+        
       
       {/* </Router> */}
       </HashRouter>
