@@ -7,16 +7,18 @@ import {Provider} from './Component/Context';
 import {BrowserRouter as Router,Route,HashRouter} from 'react-router-dom';
 function App() {
   return (
-    <Router>
+    <HashRouter basename='/'>
+    {/* <Router> */}
       <Provider>
-      <HashRouter basename='/'>
+      
         <Route path='/' component={Header}></Route>
         <Route path='/add-list' component={Add}></Route>
         <Route path='/edit-list/:id' component={Edit}></Route>
         <Route path='/view-list' component={View}></Route>
-        </HashRouter>
+      
       </Provider>
-      </Router>
+      {/* </Router> */}
+      </HashRouter>
   );
 }
 export default App;
