@@ -7,11 +7,11 @@ export default class ViewList extends Component {
         this.view()
     }
     view=async()=>{
-        const res=await axios.get('http://localhost:8080/view')
+        const res=await axios.get('http://3.129.92.172:8080/view')
         this.setState({List:res.data})
     }
     ondelete=(id)=>{
-        axios.get(`http://localhost:8080/delete/`+id)
+        axios.get(`http://3.129.92.172:8080/delete/`+id)
         .then((res)=>{
             if(res.status=="200"){
                 this.view()
