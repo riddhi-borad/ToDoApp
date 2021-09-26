@@ -16,9 +16,9 @@ export default function List(props) {
     return (
         <>
             <td>{props.data.name}</td>
-            {/* <td>{props.data.title}</td>
+            <td>{props.data.title}</td>
             <td>{props.data.duration}</td>
-            <td>{props.data.desc}</td> */}
+            <td>{props.data.desc}</td>
             <td>
                 <button className="btn btn-danger m-2" onClick={()=>{ondelete(props.data._id)}}>Delete</button>
                 {/* <Link className="btn btn-info m-2" to={"/edit-list/"+props.data._id}>Edit</Link> */}

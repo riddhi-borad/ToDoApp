@@ -1,5 +1,5 @@
 {
-  "homepage": "http://riddhi-borad.github.io/ToDoApp",
+  "homepage": "https://riddhi-borad.github.io/ToDoApp",
   "name": "todo-list",
   "version": "0.1.0",
   "private": true,
@@ -19,8 +19,8 @@
     "reactstrap": "^8.6.0"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d -build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
