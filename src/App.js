@@ -11,7 +11,7 @@ function App() {
     {/* <Router> */}
       <Provider>
       
-        <Route path='/' component={Header}></Route>
+        <Route exact  path='/' component={Header}></Route>
         <Route path='/add-list' component={Add}></Route>
         {/* <Route path='/edit-list/:id' component={Edit}></Route> */}
         <Route path='/view-list' component={View}></Route>
